@@ -16,7 +16,8 @@ logging.basicConfig(
 )
 
 if __name__ == "__main__":
-    profiles = ["Profile 2", "Profile 3", "Profile 4", "Profile 5"]
+    profiles = ["Profile 2", "Profile 3", "Profile 4", "Profile 5", "Profile 6", "Profile 7", "Profile 8", "Profile 9",
+                "Profile 10"]
     path = path.join(Path(__file__).parent.absolute(), "open_chrome.sh")
     for profile in profiles:
         call([path, profile, argv[1]])
