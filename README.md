@@ -73,7 +73,7 @@ To open multiple links in Chrome profiles, follow these steps:
    # open link3
    open-chrome <link3>
    ```
-   Replace /path/to/ with the actual path to the repository folder, and <link1>, <link2>, and <link3> with the actual
+   Replace `/path/to/` with the actual path to the repository folder, and `<link1>`, `<link2>`, and `<link3>` with the actual
    links you want to open.
 3. Save and close the file.
 4. Run the script with the following command:
