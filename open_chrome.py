@@ -37,9 +37,8 @@ def open_chrome(sh_path: Path, link: str) -> None:
 
     """
     # Profiles to open
-    # profiles = ["Profile 2", "Profile 3", "Profile 4", "Profile 5", "Profile 7", "Profile 8", "Profile 9",
-    #             "Profile 10", "Profile 11"]
-    profiles = ["Profile 2", "Profile 3"]
+    profiles = ["Profile 2", "Profile 3", "Profile 4", "Profile 5", "Profile 7", "Profile 8", "Profile 9",
+                "Profile 10", "Profile 11"]
 
     # Path to the `open_chrome.sh` script
     path = sh_path / "open_chrome.sh"
