@@ -16,6 +16,8 @@ $ open ~/Library/Application\ Support/Google/Chrome
 $ pyinstaller --onefile --noconsole --noupx --icon=icon.ico --add-data 'open_chrome.sh:.' --name OpenChromeProfiles gui.py
 ```
 
+or
+
 ```zsh
 $ pyinstaller OpenChromeProfiles.spec
 ```
