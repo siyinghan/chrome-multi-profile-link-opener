@@ -50,7 +50,7 @@ To open one link in Chrome profiles, run the following command:
 $ open-chrome <link>
 ```
 
-Replace <link> with the actual link you want to open.
+Replace `<link>` with the actual link you want to open.
 
 ### Open multiple links in Chrome profiles
 
