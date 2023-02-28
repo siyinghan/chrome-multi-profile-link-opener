@@ -6,7 +6,29 @@ Open the Chrome folder to check Chrome profiles.
 $ open ~/Library/Application\ Support/Google/Chrome
 ```
 
-## Preparation
+## Getting Started
+
+### Executable File
+
+#### Create the executable file
+
+```zsh
+$ pyinstaller --onefile --noconsole --noupx --icon=icon.ico --add-data 'open_chrome.sh:.' --name OpenChromeProfiles gui.py
+```
+
+```zsh
+$ pyinstaller OpenChromeProfiles.spec
+```
+
+#### Debug
+
+```zsh
+$ ./dist/OpenChromeProfiles --debug=all
+```
+
+### Command-Line Tool
+
+#### Add an alias
 
 ```zsh
 $ echo '\nalias open-chrome="python ~/Documents/GitHub/open-link-in-multi-profiles/main.py"' >> ~/.zshrc
@@ -16,35 +38,43 @@ $ echo '\nalias open-chrome="python ~/Documents/GitHub/open-link-in-multi-profil
 $ source ~/.zshrc
 ```
 
-## Quickstart
+## Usage
 
 ### Open one link in Chrome profiles
 
-```zsh
-$ open-chrome https://www.google.com/
-```
-
-### Open multi-links in Chrome profiles
+To open one link in Chrome profiles, run the following command:
 
 ```zsh
-$ touch open-chrome.sh
+$ open-chrome <link>
 ```
 
-Copy to the new created `open-chrome.sh` and replace the links.
+Replace <link> with the actual link you want to open.
 
-```shell
-#!/bin/zsh
+### Open multiple links in Chrome profiles
 
-alias open-chrome="python ~/Documents/GitHub/python-run-shell-script/open_chrome.py"
+To open multiple links in Chrome profiles, follow these steps:
 
-# open link1
-open-chrome https://www.google.com/
-# open link2
-open-chrome https://www.google.com/
-# open link3
-open-chrome https://www.google.com/
-```
-
-```zsh
-$ sh open-chrome.sh
-```
+1. Create a new shell script file with the following command:
+   ```zsh
+   $ touch open-chrome.sh
+   ```
+2. Open the file with a text editor and add the following lines:
+   ```zsh
+   #!/bin/zsh
+   
+   alias open-chrome="python /path/to/open-link-in-multi-profiles/main.py"
+   
+   # open link1
+   open-chrome <link1>
+   # open link2
+   open-chrome <link2>
+   # open link3
+   open-chrome <link3>
+   ```
+   Replace /path/to/ with the actual path to the repository folder, and <link1>, <link2>, and <link3> with the actual
+   links you want to open.
+3. Save and close the file.
+4. Run the script with the following command:
+   ```zsh
+   $ sh open-chrome.sh
+   ```
