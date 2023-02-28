@@ -1,7 +1,11 @@
+"""
+Open a specified link in Google Chrome using different profiles in GUI.
+"""
 import sys
 from PyQt5.QtWidgets import QApplication, QDialog, QLabel, QLineEdit, QPushButton, QVBoxLayout, QWidget
+from pathlib import Path
 
-from main import open_chrome
+from open_chrome import open_chrome
 
 
 class LinkInputDialog(QDialog):
@@ -22,7 +26,7 @@ class LinkInputDialog(QDialog):
         self.submit_button = QPushButton("Submit")
         self.submit_button.clicked.connect(self.submit_link)
         layout = QVBoxLayout()
-        layout.addWidget(QLabel("Enter link:"))
+        layout.addWidget(QLabel("Enter a URL to open in Chrome:"))
         layout.addWidget(self.link_input)
         layout.addStretch(1)  # Add a stretchable empty widget
         layout.addWidget(self.submit_button)
@@ -46,5 +50,6 @@ if __name__ == '__main__':
     if dialog.exec() == QDialog.Accepted:
         link = dialog.link
         if link is not None:
-            open_chrome(link)
-    sys.exit(app.exec_())
+            open_chrome(Path(sys._MEIPASS), link)
+    app.quit()
+    sys.exit()
