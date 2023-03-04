@@ -9,6 +9,7 @@ $ open ~/Library/Application\ Support/Google/Chrome
 ## Getting Started
 
 ### Executable File
+<img width="300" alt="Snipaste_2023-03-04_14-15-11" src="https://user-images.githubusercontent.com/50146714/222903913-67ca3164-2bae-401f-9230-feca7c647383.png">
 
 #### Create the executable file
 
@@ -47,6 +48,7 @@ $ source ~/.zshrc
 ### Open one link in Chrome profiles
 
 #### Executable File
+
 
 #### Command-Line Tool
 
