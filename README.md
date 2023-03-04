@@ -50,6 +50,9 @@ $ source ~/.zshrc
 
 <img width="300" alt="Snipaste_2023-03-04_14-15-11" src="https://user-images.githubusercontent.com/50146714/222903913-67ca3164-2bae-401f-9230-feca7c647383.png">
 
+Enter a link in the provided text box and then click the **Submit** button to open the link in multiple Chrome profiles
+simultaneously.
+
 #### Command-Line Tool
 
 ```zsh
