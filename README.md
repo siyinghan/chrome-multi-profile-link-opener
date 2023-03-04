@@ -64,7 +64,7 @@ To open multiple links in Chrome profiles, follow these steps:
    ```shell
    #!/bin/zsh
    
-   alias open-chrome="python /path/to/open-link-in-multi-profiles/main.py"
+   alias open-chrome="python /path/to/chrome-multi-profile-link-opener/main.py"
    
    # open link1
    open-chrome <link1>

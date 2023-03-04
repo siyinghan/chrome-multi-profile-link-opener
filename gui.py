@@ -2,7 +2,7 @@
 Open a specified link in Google Chrome using different profiles in GUI.
 """
 import sys
-from PyQt5.QtWidgets import QApplication, QDialog, QLabel, QLineEdit, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtWidgets import QApplication, QDialog, QLabel, QLineEdit, QPushButton, QVBoxLayout
 from pathlib import Path
 
 from open_chrome import open_chrome

@@ -1,5 +1,5 @@
 """
-Open a specified link in Google Chrome using different profiles in the command line.
+Open a specified link in Google Chrome using different profiles from the command line.
 """
 from pathlib import Path
 from sys import argv

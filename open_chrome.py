@@ -1,5 +1,5 @@
 """
-Run scripts to open a link with different Chrome profiles at once.
+Run script to open a link with different Chrome profiles simultaneously.
 """
 import logging
 import sys
