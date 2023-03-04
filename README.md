@@ -46,7 +46,7 @@ $ source ~/.zshrc
 
 ### Open one link in Chrome profiles
 
-### Executable File
+#### Executable File
 
 #### Command-Line Tool
 
