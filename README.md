@@ -46,7 +46,9 @@ $ source ~/.zshrc
 
 ### Open one link in Chrome profiles
 
-To open one link in Chrome profiles, run the following command:
+### Executable File
+
+#### Command-Line Tool
 
 ```zsh
 $ open-chrome <link>
